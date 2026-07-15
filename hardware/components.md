@@ -49,6 +49,7 @@ MIPS: machine is econet,en751221
 | Manufacturer | MediaTek |
 | Part number | MT7613BEN |
 | Date code | 2237-BZAEL / AEX10074 / BAP3Y540 |
+| PCB reference | U26 |
 | Function | 802.11ac + Bluetooth combo, secondary 5GHz radio |
 
 Boot log identifies this as chip ID 0x7663:
