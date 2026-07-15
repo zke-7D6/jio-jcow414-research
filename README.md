@@ -118,10 +118,10 @@ Key observations:
 ### Confirmed Pinout
 | Pin | Function | Notes |
 |---|---|---|
-| 1 (left) | VCC 3.3V | Do NOT connect |
-| 2 | GND | Connect to adapter GND |
-| 3 | TX | Router transmits → adapter RX |
-| 4 (right) | RX | Adapter TX → router receives |
+| 1 (left) | GND | Connect to adapter GND |
+| 2 | TX | Router transmits → adapter RX |
+| 3 | RX | Adapter TX → router receives |
+| 4 (right) | VCC 3.3V | Do NOT connect — leave floating |
 
 ### Connection Settings
 ```
@@ -218,16 +218,16 @@ Downloaded encrypted config backup (`RSVOTAJEM210410_JCOW414.enc`):
 
 | Area | Status | Notes |
 |---|---|---|
-| Hardware identification | Complete | All ICs identified and documented |
-| PCB photography | Complete | All major components photographed |
-| Web UI recon | Complete | Full admin access, no shell exposed |
-| Network recon | Complete | No shell services on LAN |
-| UART connection | Complete | CP2102 connected, boot log captured |
-| Boot log analysis | Complete | Full partition map, services documented |
-| Config backup analysis | Partial | Double encrypted, key unknown for R2.52.1 |
-| Bootloader access | Blocked | Both prompts locked |
-| Linux shell access | Blocked | Root password unknown |
-| Firmware dump | Pending | Requires shell or flash reader |
+| Hardware identification | ✅ Complete | All ICs identified and documented |
+| PCB photography | ✅ Complete | All major components photographed |
+| Web UI recon | ✅ Complete | Full admin access, no shell exposed |
+| Network recon | ✅ Complete | No shell services on LAN |
+| UART connection | ✅ Complete | CP2102 connected, boot log captured |
+| Boot log analysis | ✅ Complete | Full partition map, services documented |
+| Config backup analysis | ⚠️ Partial | Double encrypted, key unknown for R2.52.1 |
+| Bootloader access | ❌ Blocked | Both prompts locked |
+| Linux shell access | ❌ Blocked | Root password unknown |
+| Firmware dump | 🔲 Pending | Requires shell or flash reader |
 
 ---
 
